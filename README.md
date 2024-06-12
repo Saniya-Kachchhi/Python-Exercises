@@ -58,5 +58,32 @@ With this new scenario, you will create a new function get_actual_cost that uses
 One function that you'll need to use to do this is math.ceil(). We demonstrate usage of this function in the code cell below. It takes as a number as input and rounds the number up to the nearest integer.
 
 
-Question 6
 
+Question 6
+Use the next code cell to create a function get_expected_cost that takes as input three variables:
+
+beds - number of bedrooms (data type float)
+baths - number of bathrooms (data type float)
+has_basement - whether or not the house has a basement (data type boolean)
+It should return the expected cost of a house with those characteristics. Assume that:
+
+the expected cost for a house with 0 bedrooms and 0 bathrooms, and no basement is 80000,
+each bedroom adds 30000 to the expected cost,
+each bathroom adds 10000 to the expected cost, and
+a basement adds 40000 to the expected cost.
+For instance,
+
+a house with 1 bedroom, 1 bathroom, and no basement has an expected cost of 80000 + 30000 + 10000 = 120000. This value will be calculated with get_expected_cost(1, 1, False).
+a house with 2 bedrooms, 1 bathroom, and a basement has an expected cost of 80000 + 2*30000 + 10000 + 40000 = 190000. This value will be calculated with get_expected_cost(2, 1, True).
+
+
+Question 7
+You own an online shop where you sell rings with custom engravings. You offer both gold plated and solid gold rings.
+
+Gold plated rings have a base cost of $50, and you charge $7 per engraved unit.
+Solid gold rings have a base cost of $100, and you charge $10 per engraved unit.
+Spaces and punctuation are counted as engraved units.
+Write a function cost_of_project() that takes two arguments:
+
+engraving - a Python string with the text of the engraving
+solid_gold - a Boolean that indicates whether the ring is solid gold
